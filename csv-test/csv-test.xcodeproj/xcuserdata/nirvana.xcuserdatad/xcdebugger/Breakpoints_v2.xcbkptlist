@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D37D2A48-023A-4BDE-BCA4-47823391D358"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A65A4EC8-6068-4DF8-8FCF-C8115CB02047"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "csv-test/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "A65A4EC8-6068-4DF8-8FCF-C8115CB02047 - fa39e0582c2c86fd"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "csv_test.ViewController.json.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "csv-test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nirvana/Documents/swift-programming/scenekit-programming/csv-test/csv-test/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "A65A4EC8-6068-4DF8-8FCF-C8115CB02047 - 262076a13ed0ac1"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "csv_test.ViewController.json.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "csv-test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nirvana/Documents/swift-programming/scenekit-programming/csv-test/csv-test/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "A65A4EC8-6068-4DF8-8FCF-C8115CB02047 - 6158105a0669f0"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "csv_test.ViewController.json.modify : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "csv-test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nirvana/Documents/swift-programming/scenekit-programming/csv-test/csv-test/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "A65A4EC8-6068-4DF8-8FCF-C8115CB02047 - 8387b6f654de1fe2"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "csv_test.ViewController.json.modify : Swift.Array&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "csv-test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nirvana/Documents/swift-programming/scenekit-programming/csv-test/csv-test/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "A65A4EC8-6068-4DF8-8FCF-C8115CB02047 - 6ea1f9e708f0fed7"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "csv_test.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; csv_test.ViewController"
+                  moduleName = "csv-test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nirvana/Documents/swift-programming/scenekit-programming/csv-test/csv-test/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "A65A4EC8-6068-4DF8-8FCF-C8115CB02047 - fb05c8bb368841ed"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "csv_test.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;csv_test.ViewController&gt;"
+                  moduleName = "csv-test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nirvana/Documents/swift-programming/scenekit-programming/csv-test/csv-test/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "117">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB830DA4-9880-45DD-9D39-077D208427BD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "csv-test/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
