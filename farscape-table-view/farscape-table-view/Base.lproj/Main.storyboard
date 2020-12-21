@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Object Data View Controller-->
         <scene sceneID="ebq-xK-Wl7">
             <objects>
-                <viewController id="cHK-ta-6Ld" sceneMemberID="viewController">
+                <viewController id="cHK-ta-6Ld" customClass="ObjectDataViewController" customModule="farscape_table_view" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xHa-qK-hoO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,6 +98,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="rPt-7x-x5a"/>
                     </view>
+                    <connections>
+                        <outlet property="objectDataTableView" destination="nj9-4Q-P1n" id="9K9-yy-YdB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1mp-fz-5ic" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

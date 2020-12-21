@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D89CC250259088C1003DCBFD /* ObjectDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89CC24F259088C1003DCBFD /* ObjectDataViewController.swift */; };
 		D8A33F7825774303007833FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A33F7725774303007833FB /* AppDelegate.swift */; };
 		D8A33F7A25774303007833FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A33F7925774303007833FB /* SceneDelegate.swift */; };
 		D8A33F7C25774303007833FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A33F7B25774303007833FB /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D89CC24F259088C1003DCBFD /* ObjectDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDataViewController.swift; sourceTree = "<group>"; };
 		D8A33F7425774303007833FB /* farscape-table-view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "farscape-table-view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A33F7725774303007833FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8A33F7925774303007833FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				D8A33F7925774303007833FB /* SceneDelegate.swift */,
 				D8A33F7B25774303007833FB /* ViewController.swift */,
+				D89CC24F259088C1003DCBFD /* ObjectDataViewController.swift */,
 				D8A33F8025774304007833FB /* Assets.xcassets */,
 				D8A33F8B25774FC1007833FB /* core_planet_1.json */,
 				D8A33F7725774303007833FB /* AppDelegate.swift */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8A33F7C25774303007833FB /* ViewController.swift in Sources */,
+				D89CC250259088C1003DCBFD /* ObjectDataViewController.swift in Sources */,
 				D8A33F7825774303007833FB /* AppDelegate.swift in Sources */,
 				D8A33F7A25774303007833FB /* SceneDelegate.swift in Sources */,
 			);

@@ -7,15 +7,18 @@
 //
 
 
-var nameBuffer: String = ""
 
 import UIKit
 import Foundation
+
+var nameBuffer: String = ""
+
 func replace(_ str: String, _ pattern: String, _ template: String) -> String {
     let regex = try! NSRegularExpression(pattern: pattern, options:.caseInsensitive)
     return  regex.stringByReplacingMatches(in: str, options: [], range: NSRange(0..<str.utf16.count), withTemplate: template)
     
 }
+
 func getTags(_ planet: [String:String]) -> [String] {
     var tags = [String]()
     var mass: Double = Double(planet["Mass   (Mjup / Me)"]!)!
