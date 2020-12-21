@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D8A33F7425774303007833FB /* star-table-view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "star-table-view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8A33F7425774303007833FB /* farscape-table-view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "farscape-table-view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A33F7725774303007833FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8A33F7925774303007833FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D8A33F7B25774303007833FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		D8A33F7525774303007833FB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8A33F7425774303007833FB /* star-table-view.app */,
+				D8A33F7425774303007833FB /* farscape-table-view.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,10 +60,10 @@
 			children = (
 				D8A33F7925774303007833FB /* SceneDelegate.swift */,
 				D8A33F7B25774303007833FB /* ViewController.swift */,
+				D8A33F8025774304007833FB /* Assets.xcassets */,
 				D8A33F8B25774FC1007833FB /* core_planet_1.json */,
 				D8A33F7725774303007833FB /* AppDelegate.swift */,
 				D8A33F7D25774303007833FB /* Main.storyboard */,
-				D8A33F8025774304007833FB /* Assets.xcassets */,
 				D8A33F8225774304007833FB /* LaunchScreen.storyboard */,
 				D8A33F8525774304007833FB /* Info.plist */,
 			);
@@ -87,7 +87,7 @@
 			);
 			name = "farscape-table-view";
 			productName = "farscape-table-view";
-			productReference = D8A33F7425774303007833FB /* star-table-view.app */;
+			productReference = D8A33F7425774303007833FB /* farscape-table-view.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -296,7 +296,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sugar-glider.farscape-table-view";
-				PRODUCT_NAME = "star-table-view";
+				PRODUCT_NAME = "farscape-table-view";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sugar-glider.farscape-table-view";
-				PRODUCT_NAME = "star-table-view";
+				PRODUCT_NAME = "farscape-table-view";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

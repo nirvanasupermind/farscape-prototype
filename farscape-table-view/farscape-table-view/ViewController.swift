@@ -195,12 +195,16 @@ class ViewController: UIViewController,UISearchResultsUpdating {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        definesPresentationContext = true
+
         theTableView.delegate = self
         theTableView.dataSource = self
         
         
         resultSearchController = ({
             let controller = UISearchController(searchResultsController: nil)
+            
+            controller.isActive = false
             controller.searchResultsUpdater = self
             controller.dimsBackgroundDuringPresentation = false
             controller.searchBar.sizeToFit()
@@ -218,6 +222,7 @@ class ViewController: UIViewController,UISearchResultsUpdating {
     
     
     
+    
 }
 
 
@@ -226,6 +231,8 @@ class ViewController: UIViewController,UISearchResultsUpdating {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped me")
+        resultSearchController.isActive = false
+        performSegue(withIdentifier: "dataSegue", sender: nil)
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -267,6 +274,7 @@ extension ViewController: UITableViewDataSource {
         }
         
 
+        
         
         
         
