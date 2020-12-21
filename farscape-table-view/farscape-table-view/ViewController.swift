@@ -232,7 +232,7 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped me")
         resultSearchController.isActive = false
-        performSegue(withIdentifier: "dataSegue", sender: nil)
+//        performSegue(withIdentifier: "dataSegue", sender: nil)
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
