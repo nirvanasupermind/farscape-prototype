@@ -7,6 +7,8 @@
 //
 
 
+var nameBuffer: String = ""
+
 import UIKit
 import Foundation
 func replace(_ str: String, _ pattern: String, _ template: String) -> String {
@@ -232,7 +234,10 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped me")
         resultSearchController.isActive = false
-//        performSegue(withIdentifier: "dataSegue", sender: nil)
+         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        nameBuffer = cell.textLabel?.text ?? ""
+        print(nameBuffer)
+        performSegue(withIdentifier: "dataSegue", sender: nil)
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
