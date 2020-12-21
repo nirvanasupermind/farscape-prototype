@@ -11,8 +11,10 @@
 import UIKit
 import Foundation
 
-var nameBuffer: String = ""
-
+var nameBuffer = ""
+var indexRowBuffer: Int = 0
+var NAME = "Exoplanet Name    "
+var planetDataBuffer: [[String:String]] = []
 func replace(_ str: String, _ pattern: String, _ template: String) -> String {
     let regex = try! NSRegularExpression(pattern: pattern, options:.caseInsensitive)
     return  regex.stringByReplacingMatches(in: str, options: [], range: NSRange(0..<str.utf16.count), withTemplate: template)
@@ -220,7 +222,7 @@ class ViewController: UIViewController,UISearchResultsUpdating {
         })()
         
         self.planetData = loadJson(fileName: "core_planet_1")!
-        
+        planetDataBuffer = self.planetData
         
     }
     
@@ -235,11 +237,20 @@ class ViewController: UIViewController,UISearchResultsUpdating {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped me")
-        resultSearchController.isActive = false
-         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        nameBuffer = cell.textLabel?.text ?? ""
-        print(nameBuffer)
+        if( resultSearchController.isActive == false) {
+        indexRowBuffer = planetData.map { $0[NAME] }.firstIndex(of: planetData[indexPath.row][NAME])!
+            performSegue(withIdentifier: "dataSegue", sender: nil)
+        } else {
+            indexRowBuffer = planetData.map { $0[NAME] }.firstIndex(of: filteredTableData[indexPath.row][NAME])!
+            resultSearchController.isActive = false
+
+            performSegue(withIdentifier: "dataSegue", sender: nil)
+
+
+        }
+        
+        
+        print("You tapped me, the buffer as \(indexRowBuffer)")
         performSegue(withIdentifier: "dataSegue", sender: nil)
     }
     
