@@ -246,7 +246,7 @@ extension ViewController: UITableViewDelegate {
 
             performSegue(withIdentifier: "dataSegue", sender: nil)
 
-
+// return "(\(currentData.count)) Planets"
         }
         
         
