@@ -204,9 +204,12 @@ class ViewController: UIViewController,UISearchResultsUpdating {
         
         definesPresentationContext = true
 
+        
         theTableView.delegate = self
         theTableView.dataSource = self
         
+//        self.navigationController!.setNavigationBarHidden = false
+//
         
         resultSearchController = ({
             let controller = UISearchController(searchResultsController: nil)
@@ -227,7 +230,11 @@ class ViewController: UIViewController,UISearchResultsUpdating {
     }
     
     
-    
+    //  Converted to Swift 5.3 by Swiftify v5.3.29144 - https://swiftify.com/
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
     
     
 }
@@ -304,5 +311,6 @@ extension ViewController: UITableViewDataSource {
     
     
 }
+
 
 
