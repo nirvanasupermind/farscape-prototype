@@ -66,11 +66,12 @@ class Planet: Body {
     
     
     
-    static func randTerrestrial(_ star: Star =  Star.rand(), _ dist: Double = -1.0) -> Planet {
+    static func randTerrestrial(_ star: Star =  Star.rand(), _ dist: Double = -1.0, _ name: String = randomName()) -> Planet {
         let result = Planet()
         result.star = star
         result.mass = logRandom(0.002,10)
-        result.name = randomName()
+        result.name = name
+        
         var myDist: Double = dist
         if(myDist == -1.0) {
             let innerLimit: Double = 0.1*star.mass
@@ -88,11 +89,11 @@ class Planet: Body {
     }
     
     
-    static func randIceGiant(_ star: Star =  Star.rand(), _ dist: Double = -1.0) -> Planet {
+    static func randIceGiant(_ star: Star =  Star.rand(), _ dist: Double = -1.0, _ name: String = randomName()) -> Planet {
         let result = Planet()
         result.star = star
         result.mass = random(4.0,62.5)
-        result.name = randomName()
+        result.name = name
         var myDist: Double = dist
         if(myDist == -1.0) {
             let innerLimit: Double = 0.1*star.mass
@@ -109,11 +110,11 @@ class Planet: Body {
         return result
     }
     
-    static func randGasGiant(_ star: Star =  Star.rand(), _ dist: Double = -1.0) -> Planet {
+    static func randGasGiant(_ star: Star =  Star.rand(), _ dist: Double = -1.0, _ name: String = randomName()) -> Planet {
         let result = Planet()
         result.star = star
         result.mass = random(0.2,10.0)*(MassUnit.Mjup.rawValue/MassUnit.Mearth.rawValue)
-        result.name = randomName()
+        result.name = name
         var myDist: Double = dist
         if(myDist == -1.0) {
             let innerLimit: Double = 0.1*star.mass
@@ -130,11 +131,11 @@ class Planet: Body {
         return result
     }
     
-    static func rand(_ star: Star = Star.rand(), _ dist: Double = -1.0) -> Planet {
+    static func rand(_ star: Star = Star.rand(), _ dist: Double = -1.0, _ name: String = randomName()) -> Planet {
         return weightedRandomElement(items: [
-            (Planet.randTerrestrial(star,dist),4.0),
-            (Planet.randIceGiant(star,dist),2.0),
-            (Planet.randGasGiant(star,dist),2.0)
+            (Planet.randTerrestrial(star,dist,name),4.0),
+            (Planet.randIceGiant(star,dist,name),2.0),
+            (Planet.randGasGiant(star,dist,name),2.0)
         ])
     }
     

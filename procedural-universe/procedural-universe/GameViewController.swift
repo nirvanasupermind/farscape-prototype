@@ -13,7 +13,7 @@ import SceneKit
 class GameViewController: UIViewController {
     func runTests() {
         print("****Tests")
-        print(Planet.rand())
+        print(SolarSystem.rand())
         print("****End tests")
     }
     

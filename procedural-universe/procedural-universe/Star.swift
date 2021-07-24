@@ -418,7 +418,20 @@ class Star: Body {
         ],4.0))
     }
     
+    static func randHost() -> Star {
+        return weightedRandomElement(items: [
+            (Star.randOMain(),1.0),
+            (Star.randBMain(),1.0),
+            (Star.randAMain(),5.0),
+            (Star.randFMain(),30.0),
+            (Star.randGMain(),70.0),
+            (Star.randKMain(),100.0),
+            (Star.randMMain(),700.0),
+            (Star.randNeutronStar(),1.0)
+        ])
+    }
     
+   
     
     
     

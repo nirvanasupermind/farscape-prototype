@@ -197,6 +197,7 @@ class Body: PropertyNames, PropertyReflectable, Equatable, Hashable, CustomStrin
         return "\(type(of: self)) '\(self.name)' (\(myRound(self.mass)) \(self.massUnit))"
     }
     
+   
     var radius: Double = 0.0
     var radiusUnit: DistUnit = .km
     var mass: Double = 0.0

@@ -16,6 +16,7 @@
 		D863998F25D4D80E00CFEAE6 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = D863998E25D4D80E00CFEAE6 /* Star.swift */; };
 		D878A04A25D63F8B00DDFC56 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D878A04925D63F8B00DDFC56 /* Planet.swift */; };
 		D8DFA28225D6656900873A8C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DFA28125D6656900873A8C /* GameViewController.swift */; };
+		D8DFA28425D8FAF700873A8C /* SolarSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DFA28325D8FAF700873A8C /* SolarSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D863998E25D4D80E00CFEAE6 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		D878A04925D63F8B00DDFC56 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		D8DFA28125D6656900873A8C /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D8DFA28325D8FAF700873A8C /* SolarSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				D878A04925D63F8B00DDFC56 /* Planet.swift */,
 				D8DFA28125D6656900873A8C /* GameViewController.swift */,
 				D863998C25D4D28100CFEAE6 /* Body.swift */,
+				D8DFA28325D8FAF700873A8C /* SolarSystem.swift */,
 				D863998E25D4D80E00CFEAE6 /* Star.swift */,
 				D863997E25D4D20300CFEAE6 /* Main.storyboard */,
 				D863998125D4D20500CFEAE6 /* Assets.xcassets */,
@@ -150,6 +153,7 @@
 			files = (
 				D863998D25D4D28100CFEAE6 /* Body.swift in Sources */,
 				D863997925D4D20300CFEAE6 /* AppDelegate.swift in Sources */,
+				D8DFA28425D8FAF700873A8C /* SolarSystem.swift in Sources */,
 				D863998F25D4D80E00CFEAE6 /* Star.swift in Sources */,
 				D8DFA28225D6656900873A8C /* GameViewController.swift in Sources */,
 				D878A04A25D63F8B00DDFC56 /* Planet.swift in Sources */,
