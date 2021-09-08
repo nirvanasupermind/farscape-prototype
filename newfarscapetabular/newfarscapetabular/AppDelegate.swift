@@ -1,15 +1,14 @@
 //
 //  AppDelegate.swift
-//  farscapetabular
+//  newfarscapetabular
 //
-//  Created by Nirvana Choudhury on 7/23/21.
+//  Created by Nirvana Choudhury on 9/7/21.
 //  Copyright © 2021 Sugar Glider/. All rights reserved.
 //
 
 import UIKit
 
 @UIApplicationMain
-
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 

@@ -1,7 +1,8 @@
 import UIKit
-class ViewController:
+class ListViewController:
     UIViewController,
-UITableViewDelegate, UITableViewDataSource {
+    UITableViewDelegate,
+    UITableViewDataSource {
     
     // Data model: These strings will be the data for the table view cells
     //    let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
@@ -37,7 +38,7 @@ UITableViewDelegate, UITableViewDataSource {
 
         searchController.searchResultsUpdater = self
         searchController.hidesNavigationBarDuringPresentation = false
-        searchController.dimsBackgroundDuringPresentation = false
+//        searchController.dimsBackgroundDuringPresentation = false
         searchController.searchBar.sizeToFit()
         self.tableView.tableHeaderView = searchController.searchBar
         
@@ -67,6 +68,8 @@ UITableViewDelegate, UITableViewDataSource {
         self.data = myData
         self.names = myData.map { $0.first! }
         self.filteredNames = self.names
+        
+//        definesPresentationContext = true
     }
     
     // number of rows in table view
@@ -94,7 +97,10 @@ UITableViewDelegate, UITableViewDataSource {
     
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped cell number \(indexPath.row).")
+        self.searchController.dismiss(animated: true, completion: nil)
+        
+        performSegue(withIdentifier: "ListToDetailsSegue", sender: self )
+    
     }
     
     func filterContentForSearchText(_ searchText: String) {
@@ -110,10 +116,19 @@ UITableViewDelegate, UITableViewDataSource {
       
       tableView.reloadData()
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ListToDetailsSegue" {
+            guard let vc = segue.destination as? DetailsViewController else { return }
+//            vc.segueText = segueTextField.text
+        }
+    }
+    
 }
 
 
-extension ViewController: UISearchResultsUpdating {
+extension ListViewController: UISearchResultsUpdating {
   func updateSearchResults(for searchController: UISearchController) {
     let searchBar = searchController.searchBar
     filterContentForSearchText(searchBar.text!)
