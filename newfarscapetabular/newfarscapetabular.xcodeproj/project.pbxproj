@@ -13,7 +13,6 @@
 		D82D0D7326E88F7100E9AC37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82D0D7126E88F7100E9AC37 /* Main.storyboard */; };
 		D82D0D7526E88F7300E9AC37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82D0D7426E88F7300E9AC37 /* Assets.xcassets */; };
 		D82D0D7826E88F7300E9AC37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82D0D7626E88F7300E9AC37 /* LaunchScreen.storyboard */; };
-		D84E85D726E91DAF005648B7 /* sampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = D84E85D626E91DAE005648B7 /* sampleData.json */; };
 		D84E85D926E924EA005648B7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84E85D826E924EA005648B7 /* DetailViewController.swift */; };
 		D88146A726E9DC910058CEB1 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88146A626E9DC910058CEB1 /* Planet.swift */; };
 		D88146AD26E9E9D30058CEB1 /* core_data.json in Resources */ = {isa = PBXBuildFile; fileRef = D88146AC26E9E9D30058CEB1 /* core_data.json */; };
@@ -28,7 +27,6 @@
 		D82D0D7426E88F7300E9AC37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D82D0D7726E88F7300E9AC37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D82D0D7926E88F7300E9AC37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D84E85D626E91DAE005648B7 /* sampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleData.json; sourceTree = "<group>"; };
 		D84E85D826E924EA005648B7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D88146A626E9DC910058CEB1 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		D88146AC26E9E9D30058CEB1 /* core_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = core_data.json; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 				D88146AC26E9E9D30058CEB1 /* core_data.json */,
 				D82D0D7126E88F7100E9AC37 /* Main.storyboard */,
 				D84E85D826E924EA005648B7 /* DetailViewController.swift */,
-				D84E85D626E91DAE005648B7 /* sampleData.json */,
 				D82D0D7426E88F7300E9AC37 /* Assets.xcassets */,
 				D82D0D7626E88F7300E9AC37 /* LaunchScreen.storyboard */,
 				D82D0D7926E88F7300E9AC37 /* Info.plist */,
@@ -141,7 +138,6 @@
 				D82D0D7826E88F7300E9AC37 /* LaunchScreen.storyboard in Resources */,
 				D82D0D7526E88F7300E9AC37 /* Assets.xcassets in Resources */,
 				D82D0D7326E88F7100E9AC37 /* Main.storyboard in Resources */,
-				D84E85D726E91DAF005648B7 /* sampleData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

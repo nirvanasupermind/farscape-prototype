@@ -18,11 +18,28 @@ class DetailViewController: UIViewController {
     let fieldNames: [String: String] = [
         "name": "Name",
         "planet_status": "Planet status",
-        "discovered_in": "Discoverd in",
+        "discovered_in": "Discovered in",
         "alt_names": "Alternate names",
         "radius": "Radius (Rjup)",
         "mass": "Mass (Mjup)",
-        "semi_major_axis": "Semi-major axis (AU)"
+        "semi_major_axis": "Semi-major axis (AU)",
+        "eccentricity": "Eccentricity",
+        "inclination": "Inclination (deg)",
+        "orbital_period": "Orbital period (day)",
+        "surface_gravity": "Surface gravity (g)",
+        "calc_temp": "Calculated temperature (K)",
+        "measured_temp": "Measured temperature (K)",
+        "detection_type": "Detection type",
+        "star_name": "Star name",
+        "star_alt_names": "Star alternate names",
+        "star_distance":"Star distance (ly)",
+        "star_radius": "Star radius (Rsun)",
+        "star_mass": "Star mass (Msun)",
+        "star_age": "Star age (Gy)",
+        "star_temp": "Star temperature (K)",
+        "star_spec_type": "Star spectral type",
+        "star_ra": "Star right ascension (deg)",
+        "star_dec": "Star declination (deg)"
     ]
      
     override func viewDidLoad() {
@@ -39,7 +56,7 @@ class DetailViewController: UIViewController {
     func setPlanet(planet: Planet) {
         self.planet = planet
     }
-
+    
     /*
     // MARK: - Navigation
 
@@ -68,13 +85,15 @@ extension DetailViewController: UITableViewDataSource {
         
         cell.textLabel?.text = data[indexPath.row].0
         cell.textLabel?.textColor = UIColor.white
+        cell.textLabel?.adjustsFontSizeToFitWidth = true
 
         cell.detailTextLabel?.text = data[indexPath.row].1 == "" ? "–" :  data[indexPath.row].1
         cell.detailTextLabel?.textColor = UIColor.white
+        cell.detailTextLabel?.adjustsFontSizeToFitWidth = true
 
-        
         return cell
     }
+
 }
 
 

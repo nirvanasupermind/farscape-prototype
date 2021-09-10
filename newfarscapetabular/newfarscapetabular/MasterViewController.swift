@@ -95,7 +95,8 @@ extension MasterViewController: UITableViewDataSource {
         
         cell.textLabel?.text = filteredNames[indexPath.row]
         cell.textLabel?.textColor = UIColor.white
-        
+        cell.textLabel?.adjustsFontSizeToFitWidth = true
+
         return cell
     }
 }
