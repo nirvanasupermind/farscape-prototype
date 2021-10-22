@@ -48,6 +48,10 @@ class ViewController: UIViewController {
         self.count += 1
     }
     
+    @IBAction func clearButton(_ sender: Any) {
+        textView.text = ""
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
