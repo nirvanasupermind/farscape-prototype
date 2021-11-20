@@ -427,6 +427,8 @@ public class Interpreter {
     
     public func visit(_ node: Node) throws -> Number {
         switch(node.node_type) {
+            case .EmptyNode:
+                return try self.visit_empty_node(node)
             case .NumberNode:
                 return try self.visit_number_node(node)
             case .NameNode:
@@ -452,6 +454,10 @@ public class Interpreter {
             default:
                 fatalError("Unknown node type")
         }
+    }
+
+    public func visit_empty_node(_ node: Node) throws -> Number {
+        return Number(0.0)
     }
     
     public func visit_number_node(_ node: Node) throws -> Number {

@@ -15,38 +15,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IRb-lx-TBl">
-                                <rect key="frame" x="20" y="828" width="313" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atF-8e-AgV">
-                                <rect key="frame" x="347" y="828" width="49" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Submit"/>
-                                <connections>
-                                    <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bht-d8-OLn"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ncn-uZ-FiL">
-                                <rect key="frame" x="0.0" y="35" width="414" height="785"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ncn-uZ-FiL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="756"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRr-e8-uhe">
-                                <rect key="frame" x="372" y="37" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRr-e8-uhe">
+                                <rect key="frame" x="358" y="44" width="36" height="30"/>
                                 <state key="normal" title="Clear"/>
                                 <connections>
                                     <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LKQ-Zn-GMH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atF-8e-AgV">
+                                <rect key="frame" x="182.5" y="850" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bht-d8-OLn"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IRb-lx-TBl">
+                                <rect key="frame" x="82" y="808" width="250" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Gji-1q-XCV"/>
+                                    <constraint firstAttribute="width" constant="250" id="f3f-Ig-zpE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ncn-uZ-FiL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Po-rx-9ht"/>
+                            <constraint firstItem="atF-8e-AgV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Lx-yj-rRO"/>
+                            <constraint firstItem="HRr-e8-uhe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9eP-d2-B70"/>
+                            <constraint firstAttribute="bottom" secondItem="atF-8e-AgV" secondAttribute="bottom" constant="16" id="C0n-PD-zT2"/>
+                            <constraint firstItem="ncn-uZ-FiL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CHd-Zj-9Um"/>
+                            <constraint firstItem="IRb-lx-TBl" firstAttribute="top" secondItem="ncn-uZ-FiL" secondAttribute="bottom" constant="8" id="GpZ-9G-h7m"/>
+                            <constraint firstItem="HRr-e8-uhe" firstAttribute="top" secondItem="ncn-uZ-FiL" secondAttribute="top" id="QJM-yP-01p"/>
+                            <constraint firstItem="atF-8e-AgV" firstAttribute="top" secondItem="IRb-lx-TBl" secondAttribute="bottom" constant="8" id="XlN-HQ-4yy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HRr-e8-uhe" secondAttribute="trailing" constant="20" id="eUQ-mO-1eD"/>
+                            <constraint firstItem="ncn-uZ-FiL" firstAttribute="top" secondItem="HRr-e8-uhe" secondAttribute="bottom" constant="14" id="leS-ko-EDH"/>
+                            <constraint firstItem="IRb-lx-TBl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mDW-9W-M5v"/>
+                            <constraint firstItem="IRb-lx-TBl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o8U-po-Fgc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -56,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-65.217391304347828" y="103.79464285714285"/>
+            <point key="canvasLocation" x="-66.666666666666671" y="101.90217391304348"/>
         </scene>
     </scenes>
 </document>
